@@ -1,0 +1,157 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+
+.album {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    max-width: 400px;
+}
+
+.album>img {
+    height: 50vh;
+    width: 50wh;
+    max-width: 400px;
+    border: 10px bold white;
+    border-radius: 10px;
+}
+
+.info {
+    flex: 1;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 400px;
+}
+
+.no {
+    font-size: 100px;
+    margin: 20px 0px 20px 0px;
+}
+
+.title {
+    font-size: 50px;
+    margin: 20px 0px 20px 0px;
+}
+
+.artist {
+    font-size: 25px;
+    margin: 20px 0px 20px 0px;
+}
+
+.info a , .sm a {
+    text-decoration: none;
+    color: brown;
+}
+
+.header{
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+}
+
+.ex {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+
+.sm {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.sm>img {
+    height: 40vh;
+    width: 30wh;
+    max-width: 400px;
+    border: 10px bold white;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    color: red;
+}
+
+hr {
+    display: flex;
+    max-width: 60vw;
+}
+
+
+
+@media (min-width: 319px) and (max-width: 480px) {
+    body{
+        text-align: center;
+        margin: 0px;
+    }  
+
+    .container{
+        gap:0px;
+    }
+
+    .album>img {
+        height: 40vh;
+        width: 30wh;
+        max-width: 400px;
+        border: 10px bold white;
+        border-radius: 10px;
+    }
+
+    .info{
+        justify-content: flex-start;
+    }
+  }
+
+
+@media (max-width: 1250px) {
+
+    .container {
+        flex: 1;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ex{
+        flex-direction: column;
+        height: 100%;
+    }
+}
